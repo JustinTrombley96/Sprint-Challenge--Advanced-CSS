@@ -11,12 +11,18 @@
     p {
       padding:0 15px;
     }
+    .header-img {
+      .wrap(wrap);
+      width: 100%;
+      img {
+        border-radius: 6px;
+      }
+    }
   
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
+    .wrap(wrap);
     width: 100%;
 
     img {
@@ -57,7 +63,16 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn { 
+        button {
+         .button()
+
+        }
+        button:hover {
+          background-color: aqua;
+          color: green;
+
+        }
       }
     }
 

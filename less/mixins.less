@@ -1,1 +1,23 @@
 // Mixins Here
+.button() {
+    text-wrap: wrap;
+    color: white;
+    background-color: @btn-bg-color;
+    border-radius: 10px;
+    font-size: 2em;
+    width: 100px;
+    height: 40px;
+    font-family: "ubuntu";
+    font-weight: bold;
+    
+
+}
+
+.flex(@justify) {
+    display: flex;
+    justify-content: @justify;
+}
+.wrap(@wrap) {
+    display: flex;
+    flex-wrap: @wrap;
+}
