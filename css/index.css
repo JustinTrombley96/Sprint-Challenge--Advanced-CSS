@@ -160,11 +160,6 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
-  body {
-    background-color: yellow;
-  }
-}
 .nav {
   font: #454A59;
   background-color: #F6F6F6;
@@ -226,10 +221,30 @@ footer {
 .home .intro .header-img img {
   border-radius: 6px;
 }
+@media (max-width: 500px) {
+  .home .intro .header-img img {
+    width: 100%;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -253,8 +268,30 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column;
+    padding: 5%;
+  }
+}
+.home .walk .invisible {
+  display: none;
+}
+@media (max-width: 500px) {
+  .home .walk .invisible {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    flex-direction: column;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -268,13 +305,21 @@ footer {
   background-color: #22283A;
   border-radius: 10px;
   font-size: 2em;
-  width: 100px;
-  height: 40px;
   font-family: "ubuntu";
   font-weight: bold;
+  width: 100px;
+  height: 40px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn button {
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    height: 70px;
+  }
 }
 .home .walk .walk-text .btn button:hover {
-  background-color: aqua;
+  background-color: black;
   color: green;
 }
 .home .walk .walk-img {
@@ -285,4 +330,14 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img footer {
+    border-radius: 20px;
+  }
 }
