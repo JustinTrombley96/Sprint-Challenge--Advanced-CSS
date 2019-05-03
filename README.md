@@ -34,13 +34,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website may have hard coded pixels used for layout using media queries for different devices. Responsive layout media queries are used to constrain responsive units so that as the viewport expands or shrinks, you get an experience that looks and functions beautifully across thousands of devices and screen sizes.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first is an approach that focuses on designing the primary function of the website first, and then attempting at creating higher resolutions. Desktop first is an approach that goes towards designing for the highest resolutions first and then working your way down.
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It makes it to where each em is equal to 10px. 
+2.4 = 24 pixels.
+3.4 = 34 pixels. 
+
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is a cleaner syntax for CSS that increases efficiency which is written in a different language.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept of preprocessing is how cleaner it makes the CSS. The concept that gives me the most trouble is how many brackets have to be open at the same time. I sometimes get confused as to which bracket is which.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
