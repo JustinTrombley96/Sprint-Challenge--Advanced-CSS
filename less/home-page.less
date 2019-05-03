@@ -11,21 +11,47 @@
     p {
       padding:0 15px;
     }
+    .header-img {
+      .wrap(wrap);
+      width: 100%;
+     
+      img {
+        border-radius: 6px;
+        @media (max-width: @phone) {
+          width: 100%;
+        height: 55%;
+        }
+      }
+      }
+    }
   
-  }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
+    .wrap(wrap);
     width: 100%;
-
+  .blast {
+    @media (max-width: @phone) {
+      width: 100%;
+  }
+  }
+  .sky {
+    @media (max-width: @phone) {
+      display: none;
+  }
+  }
+  .launch {
+    @media (max-width: @phone) {
+      display: none;
+  }
+  }
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }
+      
   }
+}
 
   .visit-planets {
     padding: 15px;
@@ -45,9 +71,24 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media (max-width: @phone) {
+      flex-direction: column;
+      padding: 5%;
+    }
+    .invisible {
+      display: none;
+      @media (max-width: @phone) {
+        display: flex;
+        width: 100%;
+        border-radius: 10px;
+        flex-direction: column;
+      }
+    }
     .walk-text {
       width: 50%;
+      @media (max-width: @phone) {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -57,7 +98,27 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn { 
+        button {
+         .button();
+         width: 100px;
+         height: 40px;
+         @media (max-width: @phone) {
+          display: flex;
+          width: 400px;
+          justify-content: center;
+          height: 70px;
+        }
+        
+         
+         }
+         
+        button:hover {
+          background-color: black;
+          color: green;
+
+        }
+        
       }
     }
 
@@ -65,11 +126,20 @@
       width: 46%;
       margin-left: 4%;
       
+      
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        @media (max-width: @phone) {
+          display: none;
+        }
       }
+    footer {
+      @media (max-width: @phone) {
+        border-radius: 20px;
+    }
     }
   }
+}
 }// home
