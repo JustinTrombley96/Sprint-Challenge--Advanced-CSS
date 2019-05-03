@@ -160,10 +160,21 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  body {
+    background-color: yellow;
+  }
+}
 .nav {
   font: #454A59;
   background-color: #F6F6F6;
   border: #F1F1F1;
+}
+@media (max-width: 500px) {
+  .nav {
+    width: 500px;
+    margin: 0;
+  }
 }
 .nav h1 {
   display: flex;
@@ -178,6 +189,12 @@ p {
   margin-left: 25%;
   margin-right: 25%;
   margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .nav nav {
+    width: 60%;
+    justify-content: space-between;
+  }
 }
 .nav nav a {
   text-decoration: none;
