@@ -38,19 +38,19 @@ An adaptive website may have hard coded pixels used for layout using media queri
 
 2. Describe what it means to be mobile first vs desktop first.
 
-Mobile first is an approach that focuses on designing the primary function of the website first, and then attempting at creating higher resolutions. Desktop first is an approach that goes towards designing for the highest resolutions first and then working your way down.
+Mobile first is an approach that focuses on designing the primary function of the website first, and then attempting at creating higher resolutions. Desktop first is an approach that goes towards designing for the highest resolutions first and then working your way down. Desktop makes sure that as much information is displayed for desktop users. Mobile first focuses on functionality.
 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
 It makes it to where each em is equal to 10px. 
-2.4 = 24 pixels.
-3.4 = 34 pixels. 
+2.4em = 24 pixels.
+3.4em = 34 pixels. 
 
 
 4. How would you describe preprocessing to someone new to CSS?
 
-Preprocessing is a cleaner syntax for CSS that increases efficiency which is written in a different language.
+Preprocessing is a cleaner syntax for CSS that increases efficiency which is written in a different structure. Preprocessing takes human readable code and processes it into CSS, which allows programmers to have better structured code, and allows them to change properties without having to change several of them.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
